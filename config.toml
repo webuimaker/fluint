@@ -1,0 +1,67 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Fluentbit, High Performance"
+
+
+[params]
+email = ""
+logo = "/images/logo.svg"
+copyright = "© 2021 Fluent Bit. All rights reserved"
+	         	         
+    [[menu.main]]
+        url = "/overview/"
+        name = "Overview"
+        weight = 1
+    [[menu.main]]
+        identifier = "documentation"
+        url = "/documentation/"
+        name = "Documentation"
+        weight = 2
+
+        [[menu.main]]
+            parent = "documentation"
+            name = "documentation-1"
+            url = "#"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "documentation-2"
+            url = "#"
+            weight = 11
+        [[menu.main]]
+            parent = "documentation"
+            name = "documentation-3"
+            url = "#"
+            weight = 12
+
+    [[menu.main]]
+        identifier = "About"
+        url = "/about/"
+        name = "About"
+        weight = 3
+
+    [[menu.main]]
+        identifier = "blog"
+        url = "/blog/"
+        name = "Blog"
+        weight = 4
+
+
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Terms & Conditions"
+        weight = 1
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Privacy Policy"
+        weight = 2
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Sitemap"
+        weight = 3
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Disclaimer"
+        weight = 4
+
+

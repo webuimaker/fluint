@@ -1,0 +1,22 @@
+{{ if .Params.howitworks.enabled }}
+{{$data := .Params.howitworks }}
+<section class="how-it-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <img src="{{$data.image }}" alt="how it works" class="img-fluid">
+            </div>
+            <div class="col-md-5">
+                <h4>{{$data.info | safeHTML}}</h4>
+                <ul>
+                    {{range $data.lists}}
+                    <li>{{.}}</li>
+                    {{end}}
+                </ul>
+                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-primary">{{$data.btnText | safeHTML}}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{end}}
