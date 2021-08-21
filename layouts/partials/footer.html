@@ -1,14 +1,64 @@
 
 <footer class="section pb-0">
+    
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="row">
+                    {{range .Site.Data.footer}}
+                        <div class="col-md-4 col-lg-3 footer-link">
+                            <h6>{{.linkHeading}}</h6>
+                            {{if .lists }}
+                                <ul class="mt-3">
+                                    {{range .lists}}
+                                        <li><a href="{{.url}}">{{.text}}</a></li>
+                                    {{end}}
+
+                                </ul>
+                            {{else}}
+                            <a href="{{ .buttonUrl | safeHTML}}" class="btn btn-primary">{{ .button | safeHTML}}</a>
+                            <p class="ver mt-1">{{.version | safeHTML}}</p>   
+
+                            {{end}}
+                        </div>
+                    {{end}}
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-right pl-0 pl-md-3">
+                    <img src="{{.Site.Params.footer_logo}}" alt="{{.Site.Title}}">
+
+                    <p class="mt-3 ">The only log forwarder & stream processor <strong>that you ever need.</strong></p>
+
+                    <form class="mb-4">
+                        <p class="mb-1">Stay Updated</p>
+                        <div class="input-group subscribe">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-theme" type="submit"><i class="fa fa-send"></i></button>
+                            </span>
+                        </div>
+                     </form>
+
+                     <ul class="socail-link">
+                         {{range .Site.Params.social }}
+                            <li><a href="{{.url}}"><i class="{{.icon}}"></i></a></li>
+                         {{end}}
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5 col-lg-6">
                     {{.Site.Params.copyright}}
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-7 col-lg-6">
                     <ul class="footer-bottom">
                         {{range .Site.Params.footer.bottom}}
                             <li><a href="#">{{.name}}</a></li>

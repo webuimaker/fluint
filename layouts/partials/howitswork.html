@@ -3,17 +3,17 @@
 <section class="how-it-works">
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-6 col-lg-7">
                 <img src="{{$data.image }}" alt="how it works" class="img-fluid">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6 col-lg-5">
                 <h4>{{$data.info | safeHTML}}</h4>
-                <ul>
+                <ul class="mb-4">
                     {{range $data.lists}}
                     <li>{{.}}</li>
                     {{end}}
                 </ul>
-                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-primary">{{$data.btnText | safeHTML}}</a></p>
+                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-border">{{$data.btnText | safeHTML}}</a></p>
             </div>
         </div>
     </div>
