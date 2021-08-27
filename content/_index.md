@@ -42,10 +42,47 @@ performance:
   - heading: Metrics
     icon: /images/metrics.svg
     description: Meassuring is important. Fluent Bit comes with native plugins to gather metrics from your CPU, Memory, Disk I/O and Network usage on Linux systems. In addition, it can receive metrics from external services like Statsd and Collectd.
+ctaBoxed: Fluent Bit is a CNCF (Cloud Native Computing Foundation) subproject under the umbrella of Fluentd.
+      We are part of a wide community, no vendor lock-in.
+highPerformance:
+  enabled: true
+  heading: High Performance at Low Cost
+  subHeading: High throughput with low CPU and Memory usage. It's written in C language and has a pluggable architecture supporting more than 70 extensions for inputs, filters and outputs.
+  lists:
+  - heading: Deployments per Year
+    align: left
+    description: Pull status through the time
+    image: /images/deployments-per-year.svg
+    imagePosition: 2
+  - heading: Enrich data
+    align: center
+    description: Add context to reduce <br> time for analytics
+    image: /images/enrich-data.svg
+    imagePosition:
+  - heading: Reduce Cost
+    align: center
+    description: Filter out data from <br> expensive backends
+    image: /images/reduce-cost.svg
+    imagePosition:
+  - heading: Tested at 100K /s <br> at 125 MB/s. 
+    align: center
+    description: Check out our benchmarks"
+    image: /images/tested.svg
+    imagePosition:
+  - heading: Format
+    align: left
+    description: Add structure to make data <br> more useful
+    image: /images/format.svg
+    imagePosition: 2
+  - heading: Neutrality
+    align: left
+    description: Decrease dependency on single vendor
+    image: /images/neutrality.svg
+    imagePosition:
 testimonials:
   enabled: true
-  description: Fluent Bit is a CNCF (Cloud Native Computing Foundation) subproject under the umbrella of Fluentd.
-      We are part of a wide community, no vendor lock-in.
+  heading: Our Reviews
+  subHeading: 
 features:
   enabled: true
   heading: Relevant & Dynamic

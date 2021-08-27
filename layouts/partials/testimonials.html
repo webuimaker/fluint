@@ -3,14 +3,16 @@
 
 <section class="section testimonials mt-5">
     <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 ">                                   
-                <div class="testi-info text-center">                   
-                     <p>{{$data.description}}</p> 
-                </div>
-            </div>
-        </div>
-
+      <div class="row">
+          <div class="col-12">                                   
+              <div class="section-heading text-center">
+                  <h4>{{$data.heading}}</h4>
+                  {{with  $data.subHeading }}
+                   <h5>{{.}}</h5> 
+                  {{end}}
+              </div>
+          </div>
+      </div>
         <div class="row">
             <div class="col-12">            
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">

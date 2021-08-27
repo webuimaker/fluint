@@ -1,63 +1,63 @@
-- logo: "/images/brands/gcloud.png"
+- logo: "/images/brands/gcloud.svg"
   name: "G cloud"
   weight: 1
-- logo: "/images/brands/microsoft.png"
+- logo: "/images/brands/microsoft.svg"
   name: "microsoft"
   weight: 2
-- logo: "/images/brands/aws.png"
+- logo: "/images/brands/aws.svg"
   name: "aws"
   weight: 3
-- logo: "/images/brands/digital-ocean.png"
+- logo: "/images/brands/digital-ocean.svg"
   name: "digital ocean"
   weight: 4
-- logo: "/images/brands/cisco.png"
+- logo: "/images/brands/cisco.svg"
   name: "cisco"
   weight: 5
-- logo: "/images/brands/new-relic.png"
+- logo: "/images/brands/new-relic.svg"
   name: "new relic"
   weight: 6
-- logo: "/images/brands/sumo-logic.png"
+- logo: "/images/brands/sumo-logic.svg"
   name: "sumo logic"
   weight: 7
-- logo: "/images/brands/linkedin.png"
+- logo: "/images/brands/linkedin.svg"
   name: "linkedin"
   weight: 8
-- logo: "/images/brands/vmware.png"
+- logo: "/images/brands/vmware.svg"
   name: "vmware"
   weight: 9
-- logo: "/images/brands/walemart.png"
+- logo: "/images/brands/walemart.svg"
   name: "walemart"
   weight: 10
-- logo: "/images/brands/transit.png"
+- logo: "/images/brands/transit.svg"
   name: "transit"
   weight: 11
-- logo: "/images/brands/splunk.png"
+- logo: "/images/brands/splunk.svg"
   name: "splunk"
   weight: 12
-- logo: "/images/brands/gaint-swarm.png"
+- logo: "/images/brands/gaint-swarm.svg"
   name: "gaintswarm"
   weight: 13
-- logo: "/images/brands/crowdstrike.png"
+- logo: "/images/brands/crowdstrike.svg"
   name: "crowdstrike"
   weight: 14
-- logo: "/images/brands/trend.png"
+- logo: "/images/brands/trend.svg"
   name: "trend"
   weight: 15
-- logo: "/images/brands/datadog.png"
+- logo: "/images/brands/datadog.svg"
   name: "datadog"
   weight: 16
-- logo: "/images/brands/logdna.png"
+- logo: "/images/brands/logdna.svg"
   name: "logdna"
   weight: 17
-- logo: "/images/brands/treasure-data.png"
+- logo: "/images/brands/treasure-data.svg"
   name: "treasure-data"
   weight: 18
-- logo: "/images/brands/lyft.png"
+- logo: "/images/brands/lyft.svg"
   name: "lyft"
   weight: 19
-- logo: "/images/brands/another.png"
+- logo: "/images/brands/another.svg"
   name: "another"
   weight: 20
-- logo: "/images/brands/couchbase.png"
+- logo: "/images/brands/couchbase.svg"
   name: "couchbase"
   weight: 21

@@ -81,19 +81,19 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
 
  [[params.social]]
     url   = "#"
-    icon  = "fa fa-slack" # icon name without the 'fa-'
+    icon  = "fa fa-slack" 
     name = "slack"
  [[params.social]]
     url   = "#"
-    icon  = "fa fa-rss" # icon name without the 'fa-'
+    icon  = "fa fa-rss" 
     name = "rss"
  [[params.social]]
     url   = "#"
-    icon  = "fa fa-twitter" # icon name without the 'fa-'
+    icon  = "fa fa-twitter" 
     name = "twitter"
  [[params.social]]
     url   = "#"
-    icon  = "fa fa-youtube-play" # icon name without the 'fa-'
+    icon  = "fa fa-youtube-play" 
     name = "youtube"
 
 

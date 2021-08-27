@@ -2,12 +2,6 @@
   lists:
   - text: What we Do
     url: "#"    
-  - text: Why Fluentd? 
-    url: "#"     
-  - text: User testimonials
-    url: "#"   
-  - text: FAQs
-    url: "#"
 - linkHeading:  Resources 
   lists:
   - text: Documentation
@@ -23,13 +17,7 @@
 - linkHeading:  Community 
   lists:
   - text: Blog
-    url: "#"    
-  - text: News Letter 
-    url: "#"     
-  - text: Feedback
     url: "#"   
-  - text: Contributing
-    url: "#"  
   - text: Community List
     url: "#"
   - text: Related Projects
@@ -38,11 +26,3 @@
   button: DOWNLOAD NOW v1.8.2 
   buttonUrl: "#"
   version: released on Jul 20, 2021
-- linkHeading:  Plug-Ins 
-  lists:
-  - text: Data sources
-    url: "#"  
-  - text: Data outputs
-    url: "#"
-  - text: Plugins
-    url: "#"
