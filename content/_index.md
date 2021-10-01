@@ -16,14 +16,12 @@ howitworks:
   image: /images/how.svg   
   btnText: Read how it works
   btnUrl: "#"
-  info: Collect any data from different sources, enrich them with filters and send them to multiple destinations. 
+  info: Collect logs and metrics from different sources, enrich them with filters and send them to multiple destinations.  
   lists: 
-  - Different sources of information
-  - Different data formats
-  - Data Reliability
-  - Security
+  - 80+ built in connectors and plugins
+  - Built in buffering and reliability
   - Flexible Routing
-  - Multiple destinations 
+  - Multiple destinations
 brand: 
   enabled: true 
   heading: Trusted and inspired by unique brands

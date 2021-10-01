@@ -229,6 +229,8 @@ header{
 }
 
 .high-performance {
+  position: relative;
+    z-index: 11;
   .section-heading{
     margin-bottom: 150px;    
   }  
@@ -322,12 +324,33 @@ header{
     }
   }
 }
+.testimonials-outter{
+  position: relative;
+  margin-top: -330px;   
+  background: url(/images/review-bg.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding: 240px 0px 240px;
+  background-size: contain;
+  &::before{    
+    background: url(/images/mask.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    content: "";
+    width: 100%;
+    display: none;
+  }
+  
+  
+
+}
 
 .testimonials{
   
   /* background: linear-gradient(180deg, #4E5DA9 0%, #229DAD 100%);*/
   position: relative;
-  margin-bottom: 150px;
+  // margin-bottom: 150px;
 
   .section-heading h4{
     color: #FAFBFC;
@@ -386,6 +409,7 @@ header{
     bottom: -240px;
     position: absolute;
     background-position: bottom;
+    display: none;
   }
 
   
@@ -404,6 +428,7 @@ header{
     position: absolute;
     background-position: top;
     z-index: -1;
+    display: none;
   }
 
   
@@ -726,6 +751,8 @@ footer{
   }
 
   .high-performance {
+    position: relative;
+    z-index: 11;
     .section-heading{
       margin-bottom: 100px;    
     }  
@@ -819,6 +846,7 @@ footer{
   }
 
   .testimonials{
+
      .testi-info{
         font-size: 18px;
      }
@@ -883,4 +911,65 @@ footer{
       padding: 0px;
     }
   } 
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.animation-area{
+  position: relative;
+
+  
+  
+
+}
+.ani-text{
+  position: absolute;
+  left: 22%;
+  top: 6%;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  line-height:  15px;
+  font-weight: normal;
+  color: #fff;
+  width: 70%;
+
+}
+
+.var-highlight{
+  color: #C0AD60;
+}
+.string-highlight{
+  color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  // line-height:  17px;
+  font-weight: normal;
+    margin: 0;
+    color: #fff;
+  margin-left: -30%;
+    &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
