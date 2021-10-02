@@ -6,6 +6,7 @@ title = "Fluentbit, High Performance"
 [params]
 email = ""
 logo = "/images/logo.svg"
+logo2 = "/images/logo-white.svg"
 footer_logo = "/images/footer-logo.svg"
 copyright = "© 2021 Fluent Bit. All rights reserved"
 	         	         
@@ -54,6 +55,7 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
         name = "slack"
         weight = 5
         pre = "/images/slack.svg"
+        slack = "/images/slack-w.svg"
 
     
     [[params.footer.column]]
@@ -97,3 +99,7 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
     name = "youtube"
 
 
+[permalinks]
+    # posts = "blog/:year/:month/:title/"
+    posts = "blog/:title/"
+    pages = ":slug/"
