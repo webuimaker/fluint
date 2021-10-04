@@ -3,6 +3,7 @@ title: 'Multiline log parsing with Fluent Bit'
 date: 2021-01-25
 description: "Learn about how to handle multiline logging with Fluent Bit with suggestions and an example of multiline parser.
 "
+image: "https://placeimg.com/640/480/people/sepia"
 ---
 
 #### Diatool now supports “Fluent Bit”! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit

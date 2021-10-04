@@ -10,7 +10,17 @@
     
     {{- partial "testimonials.html" . -}}  
     {{- partial "features.html" . -}}  
-    {{- partial "cta.html" . -}}  
-
-    {{ .Content}}
+    {{- partial "cta.html" . -}}
+    
+    {{if .Content }}
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {{ .Content}}     
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{end}}
 {{ end }}
