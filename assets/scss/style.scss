@@ -16,6 +16,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.py-100{padding: 100px 0px;}
+
 header{
   margin-bottom: 100px;
 
@@ -916,6 +918,64 @@ footer{
   widows: 0;
 }
 
+.table-cust{
+  margin: 30px 0px;
+  thead{
+    background: rgba(240, 242, 244, 0.5);
+    box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    th{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      font-feature-settings: 'ordn' on;
+      color: #7B8395;
+    }
+  }
+  tbody{
+    td{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      font-feature-settings: 'ordn' on;
+      color: $dark;
+    }
+  }
+}
+
+.blog-single{
+  h4{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #282E38;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 30px 0px;
+  }
+  h5{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'ordn' on;
+    color: #282E38;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 30px 0px;
+  }
+}
+.sidebar .card-columns{
+  column-count: 1;
+}
 
 
 @media (max-width: 992px) {

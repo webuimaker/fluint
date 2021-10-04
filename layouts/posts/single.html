@@ -1,6 +1,5 @@
-{{ define "main" }}
-
+{{ define "main" }}    
     {{- partial "header.html" . -}}  
-    
-    {{.Content}}
+    {{- partial "hero-inner.html" . -}}  
+    {{- partial "blogSingle.html" . -}}     
 {{ end }}

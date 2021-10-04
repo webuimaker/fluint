@@ -17,7 +17,7 @@
                                     <div class="d-flex">                                        
                                         <div class="">
                                             <h6>
-                                                {{ .Title }}
+                                                {{ .Title | safeHTML }}
                                             </h6>                                            
                                             <p>{{ .Params.description }}</p>
                                             <a href="{{ .Permalink }}" class="read-link ">Read more <i class="fa fa-long-arrow-right"></i></a>
