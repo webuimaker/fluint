@@ -1,9 +1,9 @@
 {{ "<!-- Sidebar -->" | safeHTML }}
-<div class="col-lg-4">
-    <div class="bg-white py-100 sidebar related">
+<div class="col-lg-4 py-100 py-xs-50">
+    <div class="bg-white  sidebar related">
         {{ "<!-- categories -->" | safeHTML }}
         <div class="mb-50">
-            <h5 class="mb-3">Related</h5>
+            <h5 class="mt-0">Related</h5>
             <div class="card-columns">
                 {{ $related :=  .Site.RegularPages.Related . }}
                  
@@ -15,8 +15,8 @@
                             <div class="d-flex">
                                 <p class="mb-0 date">{{ .PublishDate.Format "January 01, 2006" }}</p>
                             </div>
-                            <div class="card-img-wrapper overlay-rounded-top">
-                                <img class="card-img-top" src="{{ .Params.image | absURL }}" alt="blog-thumbnail">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="{{ .Params.image | absURL }}" alt="blog-thumbnail">
                             </div>
                             <div class="card-body p-0">
                                 <div class="d-flex">                                        
