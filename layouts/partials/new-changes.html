@@ -1,0 +1,31 @@
+<section class="section pt-1 new-changes">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h6>Fluent Bit {{ .Params.releaseNotes.version | safeHTML }} is the stable release!, new changes on this version:</h6>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-md-6">
+                {{range  .Params.newChnagesColLeft }}   
+                    <p  class="mb-1"><strong>{{.heading}}</strong></p>
+                    <ul class="pl-3 mt-0">
+                        {{range  .lists }}
+                            <li>{{. | safeHTML}}</li>
+                        {{end}}
+                    </ul>
+                {{end}}
+            </div>
+            <div class="col-md-6">
+                {{range  .Params.newChnagesColRight }}   
+                    <p class="mb-1"><strong>{{.heading}}</strong></p>
+                    <ul class="pl-3  mt-0">
+                        {{range  .lists }}
+                            <li>{{. | safeHTML}}</li>
+                        {{end}}
+                    </ul>
+                {{end}}
+            </div>
+        </div>
+    </div>
+</section>

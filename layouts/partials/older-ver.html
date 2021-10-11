@@ -1,0 +1,42 @@
+<section class="section old-ver">
+    <div class="container">
+        <div class="row">
+            <div class="col"><h4>Older Versions</h4></div>
+        </div>
+        <div class="row">
+
+            {{range  sort  .Site.Data.version "mainVer" "desc"  }} 
+
+            <div class="col-md-4">
+                <div class="ver-table">
+                    <div class="table-head">
+                        {{.version}}
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Release Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{range .lists}}
+                            <tr>
+                                <td><a href="{{.url}}">{{.subVersion}}</a></td>
+                                <td>{{.date}}</td>
+                            </tr>
+                            {{end}}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            {{end}}
+
+
+
+
+        </div>
+    </div>
+</section>
