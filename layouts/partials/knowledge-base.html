@@ -1,3 +1,4 @@
+{{if .Params.releaseNotes }}
 <section class="section knowledge-base pt-1">
     <div class="container">
         <div class="row">
@@ -6,9 +7,9 @@
                 <h3>{{ .Params.releaseNotes.heading }}</h3>
                 <p>
                     {{ .Params.releaseNotes.text | safeHTML }}
-
                 </p>
             </div>
         </div>
     </div>
 </section>
+{{end}}

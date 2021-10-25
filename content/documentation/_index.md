@@ -8,7 +8,7 @@ latestVer:
   text: "Check out the Release Notes, read the Updated Documentation or jump directly to the Downloads Section."
   smallText: "We are part of a wide community, <strong>no vendor lock-in.</strong>"
   btnText: "Download Now"
-  btnUrl: "#"
+  btnUrl: "https://docs.fluentbit.io/manual/installation/getting-started-with-fluent-bit"
   bottomText: ":: Read Documentation"
   bottomUrl: "#"
 releaseNotes:

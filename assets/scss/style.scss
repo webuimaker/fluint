@@ -1285,6 +1285,14 @@ footer{
 .new-changes{
   color:$light;
 
+  h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #282E38;
+  }
+
   ul{
     li{
       i{
@@ -1301,12 +1309,78 @@ footer{
     line-height: 28px;
     color: #282E38;
   }
-  .name-list{
-    li{
-     
-    }
+
+}
+
+.doc-content{
+  .doc{
+    margin-top: 1rem;
+  }
+  h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #282E38;
+  }
+  h6#knowledge-base{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #338BC3;
+  }
+  h5{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #282E38;
+  }
+  h3{
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #252F40;
+  }
+  p{
+    color: #535860;
   }
 
+.doc-col{
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  ul{
+    padding-left: 15px;
+    li{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      font-feature-settings: 'ordn' on;
+      color: #535860;
+    }
+  }
+}
+
+
+}
+
+
+.name-list{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      margin-left: 16.666667%;
+    }
+  }
 }
 
 .old-ver{

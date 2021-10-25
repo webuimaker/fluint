@@ -1,9 +1,21 @@
+{{if or (.Params.newChnagesColLeft) (.Params.newChnagesColRight) }}
 <section class="section pt-1 new-changes">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <h6>Fluent Bit {{ .Params.releaseNotes.version | safeHTML }} is the stable release!, new changes on this version:</h6>
-            </div>
+            {{if .Params.newChangesHeading}}
+                <div class="col-12">
+                    <h4>{{ .Params.newChangesHeading | safeHTML }}</h4>
+                </div>
+            {{else}}
+                <div class="col-12"> Changes
+                    <h6>Fluent Bit {{ .Params.releaseNotes.version | safeHTML }} is the stable release!, new changes on this version:</h6>
+                </div>
+            {{end}}
+            {{if .Params.newChangesText}}
+                <div class="col-12">
+                    <p>{{ .Params.newChangesText | safeHTML }}</p>
+                </div>
+            {{end}}
         </div>        
         <div class="row">
             <div class="col-md-6">
@@ -11,7 +23,7 @@
                     <p  class="mb-1"><strong>{{.heading}}</strong></p>
                     <ul class="pl-3 mt-0">
                         {{range  .lists }}
-                            <li>{{. | safeHTML}}</li>
+                            <li>{{. | safeHTML | markdownify}}</li>
                         {{end}}
                     </ul>
                 {{end}}
@@ -21,7 +33,7 @@
                     <p class="mb-1"><strong>{{.heading}}</strong></p>
                     <ul class="pl-3  mt-0">
                         {{range  .lists }}
-                            <li>{{. | safeHTML}}</li>
+                            <li>{{. | safeHTML | markdownify }}</li>
                         {{end}}
                     </ul>
                 {{end}}
@@ -29,3 +41,4 @@
         </div>
     </div>
 </section>
+{{end}}
